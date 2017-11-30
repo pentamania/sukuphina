@@ -1,0 +1,489 @@
+{
+ "offset": 0,
+ "notes": [
+  {
+   "track": 0,
+   "targetTime": 0
+  },
+  {
+   "track": 1,
+   "targetTime": 500
+  },
+  {
+   "track": 2,
+   "targetTime": 1000
+  },
+  {
+   "track": 3,
+   "targetTime": 1500
+  },
+  {
+   "track": 4,
+   "targetTime": 2000
+  },
+  {
+   "track": 5,
+   "targetTime": 2500
+  },
+  {
+   "track": 6,
+   "targetTime": 3000
+  },
+  {
+   "track": 7,
+   "targetTime": 3500
+  },
+  {
+   "track": 8,
+   "targetTime": 4000
+  },
+  {
+   "track": 7,
+   "targetTime": 4500
+  },
+  {
+   "track": 6,
+   "targetTime": 5000
+  },
+  {
+   "track": 5,
+   "targetTime": 5500
+  },
+  {
+   "track": 4,
+   "targetTime": 6000
+  },
+  {
+   "track": 3,
+   "targetTime": 6500
+  },
+  {
+   "track": 2,
+   "targetTime": 7000
+  },
+  {
+   "track": 1,
+   "targetTime": 7500
+  },
+  {
+   "track": 0,
+   "targetTime": 8000
+  },
+  {
+   "track": 1,
+   "targetTime": 8250
+  },
+  {
+   "track": 2,
+   "targetTime": 8500
+  },
+  {
+   "track": 8,
+   "targetTime": 9000
+  },
+  {
+   "track": 7,
+   "targetTime": 9250
+  },
+  {
+   "track": 6,
+   "targetTime": 9500
+  },
+  {
+   "track": 1,
+   "targetTime": 10000
+  },
+  {
+   "track": 2,
+   "targetTime": 10250
+  },
+  {
+   "track": 3,
+   "targetTime": 10500
+  },
+  {
+   "track": 7,
+   "targetTime": 11000
+  },
+  {
+   "track": 6,
+   "targetTime": 11250
+  },
+  {
+   "track": 5,
+   "targetTime": 11500
+  },
+  {
+   "track": 4,
+   "targetTime": 12000
+  },
+  {
+   "track": 4,
+   "targetTime": 12250
+  },
+  {
+   "track": 4,
+   "targetTime": 12500
+  },
+  {
+   "track": 5,
+   "targetTime": 13000
+  },
+  {
+   "track": 6,
+   "targetTime": 13250
+  },
+  {
+   "track": 7,
+   "targetTime": 13500
+  },
+  {
+   "track": 3,
+   "targetTime": 14000
+  },
+  {
+   "track": 2,
+   "targetTime": 14250
+  },
+  {
+   "track": 1,
+   "targetTime": 14500
+  },
+  {
+   "track": 0,
+   "targetTime": 15500
+  },
+  {
+   "track": 7,
+   "targetTime": 16000
+  },
+  {
+   "track": 7,
+   "targetTime": 16250
+  },
+  {
+   "track": 7,
+   "targetTime": 16500
+  },
+  {
+   "track": 1,
+   "targetTime": 17000
+  },
+  {
+   "track": 1,
+   "targetTime": 17250
+  },
+  {
+   "track": 1,
+   "targetTime": 17500
+  },
+  {
+   "track": 7,
+   "targetTime": 18000
+  },
+  {
+   "track": 6,
+   "targetTime": 18250
+  },
+  {
+   "track": 5,
+   "targetTime": 18500
+  },
+  {
+   "track": 4,
+   "targetTime": 18750
+  },
+  {
+   "track": 3,
+   "targetTime": 19000
+  },
+  {
+   "track": 2,
+   "targetTime": 19250
+  },
+  {
+   "track": 1,
+   "targetTime": 19500
+  },
+  {
+   "track": 5,
+   "targetTime": 20000
+  },
+  {
+   "track": 4,
+   "targetTime": 20250
+  },
+  {
+   "track": 6,
+   "targetTime": 20500
+  },
+  {
+   "track": 2,
+   "targetTime": 21000
+  },
+  {
+   "track": 7,
+   "targetTime": 21250
+  },
+  {
+   "track": 1,
+   "targetTime": 21500
+  },
+  {
+   "track": 8,
+   "targetTime": 22000
+  },
+  {
+   "track": 0,
+   "targetTime": 22250
+  },
+  {
+   "track": 4,
+   "targetTime": 22500
+  },
+  {
+   "track": 3,
+   "targetTime": 23500
+  },
+  {
+   "track": 8,
+   "targetTime": 24000
+  },
+  {
+   "track": 7,
+   "targetTime": 24250
+  },
+  {
+   "track": 6,
+   "targetTime": 24500
+  },
+  {
+   "track": 4,
+   "targetTime": 25250
+  },
+  {
+   "track": 3,
+   "targetTime": 25750
+  },
+  {
+   "track": 0,
+   "targetTime": 26250
+  },
+  {
+   "track": 1,
+   "targetTime": 26500
+  },
+  {
+   "track": 2,
+   "targetTime": 26750
+  },
+  {
+   "track": 3,
+   "targetTime": 27000
+  },
+  {
+   "track": 4,
+   "targetTime": 27250
+  },
+  {
+   "track": 7,
+   "targetTime": 27750
+  },
+  {
+   "track": 1,
+   "targetTime": 28000
+  },
+  {
+   "track": 5,
+   "targetTime": 28250
+  },
+  {
+   "track": 4,
+   "targetTime": 30250
+  },
+  {
+   "track": 2,
+   "targetTime": 31250
+  },
+  {
+   "track": 0,
+   "targetTime": 31750
+  },
+  {
+   "track": 5,
+   "targetTime": 32000
+  },
+  {
+   "track": 6,
+   "targetTime": 32250
+  },
+  {
+   "track": 8,
+   "targetTime": 32750
+  },
+  {
+   "track": 1,
+   "targetTime": 33000
+  },
+  {
+   "track": 7,
+   "targetTime": 33250
+  },
+  {
+   "track": 2,
+   "targetTime": 33500
+  },
+  {
+   "track": 6,
+   "targetTime": 33750
+  },
+  {
+   "track": 4,
+   "targetTime": 34250
+  },
+  {
+   "track": 6,
+   "targetTime": 34750
+  },
+  {
+   "track": 4,
+   "targetTime": 35250
+  },
+  {
+   "track": 2,
+   "targetTime": 35750
+  },
+  {
+   "track": 2,
+   "targetTime": 36250
+  },
+  {
+   "track": 0,
+   "targetTime": 36750
+  },
+  {
+   "track": 7,
+   "targetTime": 37000
+  },
+  {
+   "track": 1,
+   "targetTime": 37250
+  },
+  {
+   "track": 6,
+   "targetTime": 37500
+  },
+  {
+   "track": 2,
+   "targetTime": 37750
+  },
+  {
+   "track": 4,
+   "targetTime": 38250
+  },
+  {
+   "track": 2,
+   "targetTime": 38750
+  },
+  {
+   "track": 4,
+   "targetTime": 39250
+  },
+  {
+   "track": 6,
+   "targetTime": 39750
+  },
+  {
+   "track": 0,
+   "targetTime": 40000
+  },
+  {
+   "track": 1,
+   "targetTime": 40250
+  },
+  {
+   "track": 2,
+   "targetTime": 40500
+  },
+  {
+   "track": 4,
+   "targetTime": 41250
+  },
+  {
+   "track": 8,
+   "targetTime": 43750
+  },
+  {
+   "track": 0,
+   "targetTime": 44000
+  },
+  {
+   "track": 6,
+   "targetTime": 44250
+  },
+  {
+   "track": 3,
+   "targetTime": 45250
+  },
+  {
+   "track": 4,
+   "targetTime": 46250
+  },
+  {
+   "track": 4,
+   "targetTime": 48875
+  },
+  {
+   "track": 8,
+   "targetTime": 15500
+  },
+  {
+   "track": 5,
+   "targetTime": 23500
+  },
+  {
+   "track": 5,
+   "targetTime": 25750
+  },
+  {
+   "track": 8,
+   "targetTime": 26250
+  },
+  {
+   "track": 7,
+   "targetTime": 26500
+  },
+  {
+   "track": 6,
+   "targetTime": 26750
+  },
+  {
+   "track": 5,
+   "targetTime": 27000
+  },
+  {
+   "track": 3,
+   "targetTime": 29250
+  },
+  {
+   "track": 6,
+   "targetTime": 31250
+  },
+  {
+   "track": 7,
+   "targetTime": 43750
+  },
+  {
+   "track": 1,
+   "targetTime": 44000
+  },
+  {
+   "track": 2,
+   "targetTime": 44250
+  },
+  {
+   "track": 5,
+   "targetTime": 45250
+  }
+ ]
+}

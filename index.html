@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>スクフィナ</title>
+</head>
+<body>
+  <!-- <script src="../phina.js/build/phina.js"></script> -->
+  <script src='http://cdn.rawgit.com/phi-jp/phina.js/v0.2.1/build/phina.js'></script>
+
+  <script type="text/javascript">
+    'use strict';
+
+    // IE対策
+    var ua = phina.global.navigator.userAgent;
+    if (ua.indexOf('Trident') > 0) {
+      alert('インターネットエクスプローラーには対応してません！');
+    }
+
+    phina.globalize();
+  </script>
+  <script src="./config.js"></script>
+  <script src="./components.js"></script>
+  <script src="./mainscene.js"></script>
+  <script src="./titlescene.js"></script>
+
+  <script type="text/javascript">
+    phina.main(function() {
+      var app = GameApp({
+        assets: ASSETS,
+        width: SCREEN_WIDTH,
+        height: SCREEN_HEIGHT,
+        startLabel: 'title',
+        backgroundColor: '#8BF5FF',
+        title: 'スクフィナ',
+        fps: 60,
+      });
+
+      // app.enableStats();
+      app.run();
+    });
+
+  </script>
+</body>
+</html>
