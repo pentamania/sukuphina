@@ -5,7 +5,7 @@
 phina.define('UnitIcon', {
   superClass: 'phina.display.CircleShape',
 
-  init: function(id) {
+  init: function(id, label) {
     this.superInit({
       radius: MARKER_RADIUS,
       strokeWidth: MARKER_STROKE_WIDTH,
@@ -16,8 +16,9 @@ phina.define('UnitIcon', {
     this.id = id;
 
     // ナンバー表記
+    label = (label != null) ? label : id+"";
     Label({
-      text: id + "",
+      text: label,
       fontSize: 60,
     })
     .addChildTo(this)

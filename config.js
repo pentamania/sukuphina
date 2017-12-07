@@ -30,18 +30,25 @@ var RATING_TABLE = {
   },
 };
 
-// TODO: キーボード操作用
-// var KEY_INDEX_MAP = {
-//   ";": 0,
-//   "l": 1,
-//   "k": 2,
-//   "n": 3,
-//   "b": 4,
-//   "v": 5,
-//   "d": 6,
-//   "s": 7,
-//   "a": 8,
-// };
+// キーボード操作用
+var KEYCODE_TO_KEYDATA_MAP = {
+  80: {key:"p", id:0},
+  // 187: {key:";", id:0},
+  76: {key:"l", id:1},
+  75: {key:"k", id:2},
+  78: {key:"n", id:3},
+  66: {key:"b", id:4},
+  // 32: {key:"sp", id:4},
+  86: {key:"v", id:5},
+  68: {key:"d", id:6},
+  83: {key:"s", id:7},
+  81: {key:"q", id:8},
+  // 65: {key:"a", id:8},
+};
+var INDEX_TO_KEY_MAP = {};
+KEYCODE_TO_KEYDATA_MAP.forIn(function(key, val) {
+  INDEX_TO_KEY_MAP[val.id] = val.key;
+});
 
 var ASSETS = {
   sound: {
@@ -54,13 +61,13 @@ var ASSETS = {
 };
 
 // テスト用譜面
-var DEBUG_BEATMAP = {
-  offset: 0,
-  notes: [],
-};
-(100).times(function(i) {
-  DEBUG_BEATMAP.notes.push({
-    track: i%9,
-    targetTime: 500*i
-  });
-});
+// var DEBUG_BEATMAP = {
+//   offset: 0,
+//   notes: [],
+// };
+// (100).times(function(i) {
+//   DEBUG_BEATMAP.notes.push({
+//     track: i%9,
+//     targetTime: 500*i
+//   });
+// });

@@ -10,7 +10,6 @@ phina.define('MainScene', {
     this.backgroundColor = "#6BEFD5";
 
     var self = this;
-    //var gx = this.gridX = phina.util.Grid(this.width, 32);
     var gx = this.gridX;
     var gy = this.gridY;
     var AM = phina.asset.AssetManager;
@@ -20,7 +19,7 @@ phina.define('MainScene', {
 
     // タイマーのセット
     this.elapsedTime = 0; // 経過時間
-    this.gameTimer = 0 - MUSIC_START_DELAY + beatmap.offset; // 判定用時間
+    this.gameTime = 0 - MUSIC_START_DELAY + beatmap.offset; // 判定用時間
 
     this.totalScore = 0;
     // this.comboNum = 0;
@@ -30,25 +29,33 @@ phina.define('MainScene', {
       SoundManager.playMusic('music', null, false);
     });
 
-    // グループ
-    iconGroup = DisplayElement()
+    // ユニットアイコンの配置
+    var iconGroup = DisplayElement()
     .setPosition(gx.center(), gy.span(5))
     .addChildTo(this);
-    // ユニットアイコンの配置
     for (var i = 0; i < TRACK_NUM; i++) {
+      var label = INDEX_TO_KEY_MAP[i].toUpperCase();
       var rad = (i * ICON_INTERVAL_DEGREE).toRadian();
-      var icon = UnitIcon(i)
+      var icon = UnitIcon(i, label)
       .setPosition(
         Math.cos(rad) * UNIT_ARRANGE_RADIUS,
         Math.sin(rad) * UNIT_ARRANGE_RADIUS
       )
       .addChildTo(iconGroup);
 
-      // タップした時にジャッジ
+      // タップ・クリック判定
       icon.onpointstart = function() {
         self.judge(this); // 自分を渡す
       };
     }
+    // キーボード判定
+    this.on('keydown', function(e) {
+      var keyData = KEYCODE_TO_KEYDATA_MAP[e.keyCode];
+      if (keyData !== undefined) {
+        var icon = iconGroup.getChildAt(keyData.id);
+        this.judge(icon);
+      }
+    });
 
     // 譜面の展開
     this.markerGroup = DisplayElement()
@@ -98,6 +105,12 @@ phina.define('MainScene', {
     // .on('enterframe', function() {
     //   this.text = self.elapsedTime+" ms";
     // });
+
+    // this.on('enter', function() {
+    //   this.app.keyboard.on('keydown', function(e) {
+    //     console.log(e.keyCode);
+    //   })
+    // })
   },
 
   update: function(app) {
@@ -107,7 +120,7 @@ phina.define('MainScene', {
 
     // タイマー加算
     this.elapsedTime += app.deltaTime;
-    this.gameTimer += app.deltaTime;
+    this.gameTime += app.deltaTime;
 
     // ゲームスタートまでの猶予
     if (this.has('musicstart') && this.elapsedTime > MUSIC_START_DELAY) {
@@ -119,7 +132,7 @@ phina.define('MainScene', {
     markers.forEach(function(m) {
       if (!m.isAwake) return;
 
-      var time = this.gameTimer
+      var time = this.gameTime
       var rTime = m.targetTime - time; // 相対時間
 
       if (rTime < MARKER_APPEARANCE_DELTA) {
@@ -146,7 +159,7 @@ phina.define('MainScene', {
 
   // 判定処理
   judge: function(unitIcon) {
-    var time = this.gameTimer;
+    var time = this.gameTime;
 
     // 判定可能マーカーを探索
     var markers = this.markerGroup.children;
