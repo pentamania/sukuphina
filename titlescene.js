@@ -37,21 +37,20 @@ phina.define('TitleScene', {
     .to({alpha: 1}, 700)
     ;
 
-    // iOSでの再生制限アンロックのため、画面タッチ時にSoundを無音再生
+    // モバイルでの再生制限アンロックのため、画面タッチ時にSoundを無音再生
     this.on('enter', function() {
       var event = "touchstart";
       var dom = this.app.domElement;
       dom.addEventListener(event, (function() {
         return function f() {
-          phina.asset.AssetManager.assets.sound.forIn(function(key, sound) {
-            var context = sound.context;
-            var buf = context.createBuffer(1, 1, 22050);
-            var src = context.createBufferSource();
-            src.buffer = buf;
-            src.connect(context.destination);
-            src.start(0);
-          });
-          dom.removeEventListener(event, f, false)
+          var context = phina.asset.Sound.getAudioContext();
+          var buf = context.createBuffer(1, 1, 22050);
+          var src = context.createBufferSource();
+          src.buffer = buf;
+          src.connect(context.destination);
+          src.start(0);
+
+          dom.removeEventListener(event, f, false);
         }
       }()), false);
 
